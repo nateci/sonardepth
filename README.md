@@ -1,34 +1,70 @@
-# Sonar-Based Bathymetric Mapping
+# 🌊 Simulated Sonar Bathymetry Project
 
-This project simulates a basic sonar mapping system to generate and visualize underwater topography.
+This project simulates a sonar-based bathymetric scan of an underwater environment using Python and Plotly in a Jupyter Notebook. It models sonar echo delays, interference from sea creatures and plants, and dynamically visualizes measurement anomalies over time.
 
-## Features
-- Simulates sonar pings and returns
-- Generates synthetic bathymetric data
-- Visualizes 2D heatmaps and 3D depth surfaces
-- (Optional) Arduino-based sonar readings
+---
 
-## Requirements
-- Python 3.x
-- matplotlib
-- numpy
-- pandas
-- plotly (for 3D)
+## 📌 Features
 
-## demos:
+- **Simulated sonar grid sweeps** with realistic echo time-to-depth calculation
+- **Underwater interference modeling** from fish and seaweed beds
+- **3D surface plots** of measured depths and error zones
+- **Animated fish movement** over multiple sonar frames
+- **Interactive Plotly slider animation** with play/pause controls
+- **Anomaly detection** based on sonar error thresholds
 
-## 2D graph:
-![alt text](assets/image.png)
+---
 
-## 3D graph simulated bathy 
-![alt text](assets/3dbath.png)
+## 📁 Project Structure
 
-## 3D graph simulated prospective error vs bathy
-![alt text](assets/error.png)
-Colored based on how far off the sonar measured (error)
-    🔵 Blue = underestimating depth
-    🔴 Red = overestimating depth
+```
+sonar-mapping-project/
+│
+├── Simulated_Sonar_Bathymetry.ipynb   # Main Jupyter Notebook
+├── src/
+│   ├── generate_data.py               # Grid and sonar math simulation
+│   ├── plot_surface.py                # 3D bathymetric map visualization
+│   ├── plot_error_surface.py          # Error-colored true depth surface
+│   └── creatures.py                   # Interference modeling for fish and plants
+├── data/
+│   └── grid_sweep.csv                 # Example dataset from simulation
+├── environment.yml                    # Conda environment (optional)
+└── README.md                          # This file
+```
 
-## notes    
-run main.py for browser view,
-please use the notebook file if you'd like a more presentable module of my project.
+---
+
+## 🚀 How to Run
+
+1. Install dependencies:
+    ```bash
+    conda create -n sonar-sim python=3.10
+    conda activate sonar-sim
+    pip install numpy pandas plotly notebook
+    ```
+
+2. Launch the notebook:
+    ```bash
+    jupyter notebook
+    ```
+
+3. Open `Simulated_Sonar_Bathymetry.ipynb` and run all cells.
+
+---
+
+## 🎥 Loom Video Demo
+
+[![Watch the demo](assets/gifdemo.gif)](https://www.loom.com/share/b9d16d8f4de7404991363b74c2ff3e44?sid=0a5e5005-652b-4452-a129-7f01b3ae4bcd)
+---
+
+## 💡 Next Steps
+
+- Add GUI controls with Streamlit or Dash
+- Use real-world sonar/bathymetric datasets (e.g. NOAA)
+- Export animated sequences to GIF or video
+
+---
+
+## 🧠 Credits & Acknowledgements
+
+Built by Nate Cirino using Python, Plotly, and a lot of fishy math 🐟  
