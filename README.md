@@ -54,7 +54,7 @@ sonar-mapping-project/
 
 ## 🎥 Loom Video Demo
 
-[![Watch the demo](assets/gifdemo.gif)](https://www.loom.com/share/b9d16d8f4de7404991363b74c2ff3e44?sid=0a5e5005-652b-4452-a129-7f01b3ae4bcd)
+[![Watch the demo](assets/gifdemo.gif)]
 ---
 
 ## 💡 Next Steps
