@@ -52,12 +52,12 @@ sonar-mapping-project/
 
 ---
 
-## 🎥 Loom Video Demo
+## 🎥 DEMO Loom GIF?
 
-[![Watch the demo](assets/gifdemo.gif)]
+![Watch the demo](assets/gifdemo.gif)
 ---
 
-## 💡 Next Steps
+## 💡 Next up
 
 - Add GUI controls with Streamlit or Dash
 - Use real-world sonar/bathymetric datasets (e.g. NOAA)
@@ -67,4 +67,4 @@ sonar-mapping-project/
 
 ## 🧠 Credits & Acknowledgements
 
-Built by Nate Cirino using Python, Plotly, and a lot of fishy math 🐟  
+Built by nateci using Python, Plotly, and a lot of fishy math 🐟  
