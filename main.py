@@ -1,13 +1,18 @@
+from src.generate_data import generate_bathymetry_grid
+from src.plot_surface import plot_3d_surface
 import os
-from src.generate_data import generate_vessel_sweep_data
-from src.plot_error import plot_depth_error
+from src.plot_error import plot_3d_true_depth_colored_by_error
 
 def main():
     os.makedirs("data", exist_ok=True)
-    df = generate_vessel_sweep_data()
-    df.to_csv("data/vessel_sweep.csv", index=False)
-    print("Saved simulated vessel sweep to data/vessel_sweep.csv")
-    plot_depth_error(df)
+
+    df = generate_bathymetry_grid()
+    df.to_csv("data/grid_sweep.csv", index=False)
+    print("Saved simulated grid sweep to data/grid_sweep.csv")
+
+    plot_3d_surface(df)
+    plot_3d_true_depth_colored_by_error(df)
+
 
 if __name__ == "__main__":
     main()

@@ -15,7 +15,19 @@ This project simulates a basic sonar mapping system to generate and visualize un
 - pandas
 - plotly (for 3D)
 
-## EXAMPLE:
-![alt text](image.png)
+## demos:
 
-## Run the simulation
+## 2D graph:
+![alt text](assets/image.png)
+
+## 3D graph simulated bathy 
+![alt text](assets/3dbath.png)
+
+## 3D graph simulated prospective error vs bathy
+![alt text](assets/error.png)
+Colored based on how far off the sonar measured (error)
+    🔵 Blue = underestimating depth
+    🔴 Red = overestimating depth
+
+## notes    
+Should be saved as a html, and open in ur browser for both graphs once main.py is run.
