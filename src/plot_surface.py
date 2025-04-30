@@ -20,6 +20,4 @@ def plot_3d_surface(df: pd.DataFrame, output_path="data/bathymetry_plot.html"):
         margin=dict(l=0, r=0, t=50, b=0)
     )
 
-    # Save to HTML
-    pio.write_html(fig, file=output_path, auto_open=True)
-    print(f"Saved interactive 3D plot to: {output_path}")
+    fig.show()

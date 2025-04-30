@@ -38,5 +38,4 @@ def plot_3d_true_depth_colored_by_error(df: pd.DataFrame, output_path="data/dept
         margin=dict(l=0, r=0, t=50, b=0)
     )
 
-    pio.write_html(fig, file=output_path, auto_open=True)
-    print(f"Saved colored error surface plot to: {output_path}")
+    fig.show()

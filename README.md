@@ -30,4 +30,5 @@ Colored based on how far off the sonar measured (error)
     🔴 Red = overestimating depth
 
 ## notes    
-Should be saved as a html, and open in ur browser for both graphs once main.py is run.
+run main.py for browser view,
+please use the notebook file if you'd like a more presentable module of my project.
