@@ -25,10 +25,14 @@ sonar-mapping-project/
 │   ├── generate_data.py               # Grid and sonar math simulation
 │   ├── plot_surface.py                # 3D bathymetric map visualization
 │   ├── plot_error_surface.py          # Error-colored true depth surface
+│   ├── sonar_math.py                  # Math for the model collection
+│   ├── visualize.py                   # Visualization for the model, (x,y,z)
 │   └── creatures.py                   # Interference modeling for fish and plants
 ├── data/
+│   ├── vessel_sweep.csv               # Example dataset from sim, specifically that including anamolies.
 │   └── grid_sweep.csv                 # Example dataset from simulation
 ├── environment.yml                    # Conda environment (optional)
+├── main.py                            # main
 └── README.md                          # This file
 ```
 
